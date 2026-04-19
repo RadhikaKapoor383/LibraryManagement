@@ -45,33 +45,39 @@ The **GoodRead Library Management System** provides a complete solution for mana
 ```
 LibraryManagement/
 │
-├── GoodReadLibrary.java       # Main entry point
-├── MenuPage.java / .form      # Main menu UI
-├── LogInPage.java / .form     # Librarian login
-├── AdminLogIn.java / .form    # Admin login
-├── Admin.java / .form         # Admin dashboard
+├── source/goodread/library/        # All Java source & NetBeans form files
+│   ├── GoodReadLibrary.java        # Main entry point
+│   │
+│   ├── MenuPage.java / .form       # Main menu UI
+│   ├── LogInPage.java / .form      # Librarian login
+│   ├── AdminLogIn.java / .form     # Admin login
+│   ├── Admin.java / .form          # Admin dashboard
+│   │
+│   ├── AddBooks.java / .form       # Add new book
+│   ├── EditBooks.java / .form      # Edit book details
+│   ├── ManageBooks.java / .form    # Book management view
+│   ├── ViewBook.java / .form       # View single book
+│   ├── ViewingBooks.java / .form   # Browse all books
+│   │
+│   ├── AddLibrarian.java / .form   # Add librarian
+│   ├── EditLibrarian.java / .form  # Edit librarian
+│   ├── ManageLibrarian.java / .form# Manage librarians
+│   ├── LibProfile.java / .form     # Librarian profile
+│   │
+│   ├── AddPatrons.java / .form     # Add new patron
+│   ├── EditPatron.java / .form     # Edit patron info
+│   ├── ManagePatrons.java / .form  # Admin patron view
+│   ├── ManagePatronsLib.java / .form # Librarian patron view
+│   ├── newPatron.java / .form      # New patron form
+│   └── ViewProfile.java / .form    # View patron profile
 │
-├── AddBooks.java / .form      # Add new book
-├── EditBooks.java / .form     # Edit book details
-├── ManageBooks.java / .form   # Book management view
-├── ViewBook.java / .form      # View single book
-├── ViewingBooks.java / .form  # Browse all books
+├── sql/
+│   └── schema.sql                  # Full database schema & table definitions
 │
-├── AddLibrarian.java / .form  # Add librarian
-├── EditLibrarian.java / .form # Edit librarian
-├── ManageLibrarian.java/.form # Manage librarians
-├── LibProfile.java / .form    # Librarian profile
-│
-├── AddPatrons.java / .form    # Add new patron
-├── EditPatron.java / .form    # Edit patron info
-├── ManagePatrons.java / .form # Admin patron view
-├── ManagePatronsLib.java/.form# Librarian patron view
-├── newPatron.java / .form     # New patron form
-├── ViewProfile.java / .form   # View patron profile
-│
-├── DATABASE QUERIES           # SQL schema & setup
-├── build.xml                  # NetBeans Ant build file
-└── manifest.mf                # JAR manifest
+├── .gitignore                      # Ignores build/, dist/, .class files
+├── build.xml                       # NetBeans Ant build file
+├── manifest.mf                     # JAR manifest
+└── README.md
 ```
 
 ---
